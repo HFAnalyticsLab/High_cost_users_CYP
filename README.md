@@ -29,6 +29,7 @@ The following R packages are used:
 * **[here](https://cran.r-project.org/web/packages/here/index.html)**
 * **[tidyverse](https://cran.r-project.org/web/packages/tidyverse/index.html)**
 * **[naniar](https://cran.r-project.org/web/packages/naniar/index.html)**
+* **[tidylog](https://cran.r-project.org/web/packages/tidylog/index.html)**
 
 ### Getting started
 
