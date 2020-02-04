@@ -12,7 +12,7 @@ This analysis is an extention of a [working paper](https://www.health.org.uk/pub
 
 ## Data source
 
-We used data from the Clinical Practice Research Datalink (CPRD) linked to Hospital Episode Statistics (HES). ISAC protocol number [17_150R](https://www.cprd.com/protocol/high-need-patients-chronic-conditions-primary-and-secondary-care-utilisation-and-costs). We also used [NHS reference costs](improvement.nhs.uk/resources/reference-costs/)  and [PSSRU unit costs](www.pssru.ac.uk/project-pages/unit-costs/2015/index.php) to cost the clinical records. Futher detail in the references section below.
+We used data from the Clinical Practice Research Datalink (CPRD) linked to Hospital Episode Statistics (HES) - ISAC protocol number [17_150R](https://www.cprd.com/protocol/high-need-patients-chronic-conditions-primary-and-secondary-care-utilisation-and-costs). We also used [NHS reference costs](improvement.nhs.uk/resources/reference-costs/) and [PSSRU unit costs](www.pssru.ac.uk/project-pages/unit-costs/2015/index.php) to cost the clinical records. Futher detail in the references section below.
 
 Data used for this analysis were anonymised in line with the ICO's Anonymisation Code of Practice. The data were accessed in The Health Foundation's Secure Data Environment, which is a secure data analysis facility (accredited for the ISO27001 information security standard, and recognised for the NHS Digital Data Security and Protection Toolkit). No information that could directly identify a patient or other individual was used.  For ease of undertaking analysis, data objects may have been labelled e.g. 'patient_ID'.  These do not refer to NHS IDs or other identifiable patient data.
 
@@ -35,7 +35,12 @@ The following R packages are used:
 
 This project is based on the results of our original [high cost user analysis](https://github.com/HFAnalyticsLab/High_cost_users). This code should be modified and run first before using the scripts in this repository.
 
-* Scripts to be uploaded
+The SAS script (Identify_CYP) should be run on the results of the orignial analysis to identify the CYP cohort.
+
+The two R scripts contain code for the descriptive analysis:
+
+* **00_descriptives** - descriptive statistics of the top 5% and bottom 95% of the population.
+* **01_comborbidities** - creates comorbidity flags and runs descriptive statistics on comorbidities.
 
 ## Useful references
 
